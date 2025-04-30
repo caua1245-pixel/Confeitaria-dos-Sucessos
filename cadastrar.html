@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link para o CSS externo -->
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Faça seu Login</h1>
+
+        <!-- Formulário de Login -->
+        <form action="processa_login.php" method="POST">
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            <input type="password" name="password" placeholder="Digite sua senha" required>
+
+            <!-- Botão de Login -->
+            <button type="submit">Entrar</button>
+        </form>
+
+        <!-- Botões adicionais -->
+        <a href="cadastrar.html">
+            <button>Cadastrar-se</button>
+        </a>
+
+            <a href="sobre.html"><button>Voltar</button></a>
+
