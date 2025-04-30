@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+/* Centralização e layout vertical */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFBF0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Imagem responsiva */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Títulos */
+h1 {
+    font-size: 26px;
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #8B4513;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Botão responsivo */
+button {
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 90%;
+    max-width: 350px;
+}
+
+button:hover {
+    background-color: #FF1493;
+}
+
+/* Container do formulário de login */
+.login-container {
+    background-color: #FFFBF0;;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto 30px auto;
+}
+
+/* Campos de entrada */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botões */
+button {
+    font-size: 18px;
+    padding: 12px 24px;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+}
+
+button:hover {
+    background-color: #FF1493;
+}
+
+/* Estilo para links com aparência de botão */
+a {
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Botões que são links (envolvidos por <a>) */
+a button {
+    background-color: #FF69B4;
+}
+
+a button:hover {
+    background-color: #FF1493;
+}
+
+/* Estilo de iframe */
+iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 640px;
+    margin: 20px auto;
+    border: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        width: 90%;
+    }
+}
